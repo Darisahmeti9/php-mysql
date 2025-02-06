@@ -29,19 +29,18 @@
 
 // echo "<br>";
 
-$students;
 
 $count= count($students);
 
 $students=["Daris","Anik","Andi","Shpat"];
 
-for($i=0; $i<= $count; $i++;){
-    $students[i];
+for($i=0; $i<= $count; $i++){
+    $students[$i];
 }
 
-echo "br";
+echo "<br>";
 
-array_push($sport , 'Andi');
+array_push($students , 'Andi');
 
 print_r($students);
 
@@ -49,14 +48,18 @@ array_unshift($students, 'Anik');
 
 print_r($students);
 
-array_pop($studesnts);
+array_pop($students);
 
 print_r($students);
 
-array_shift($students,);
+array_shift($students);
 
 print_r($students);
 
-$sport_slice= array_slice();
+$sport_slice= array_slice($students, 2);
+
+$shuma=array_sum($shuma);
+
+$moshat=[16,14,13,15,16,14,15];
 
 ?>
