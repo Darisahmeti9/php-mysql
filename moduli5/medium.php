@@ -22,11 +22,12 @@
 function total_price($products){
 
 $sum = 0;
-}
-foreach($products as $products){
-$sum += $products["price"];
-}
 
+foreach($products as $product){
+$sum += $product["price"];
+}
+return $sum;
+}
 
 
 ?>
