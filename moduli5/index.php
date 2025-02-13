@@ -39,7 +39,7 @@ echo $lion[2][0].  "origin:" .$lion[2][1] . ", Life Span:" .$lion[2][2]. "<br>";
 
 
  $grades = array(
-     "math" => "30",
+     "math" => "4",
      "Art" => "5",
      "History" => "4",
      "music" => "5",
