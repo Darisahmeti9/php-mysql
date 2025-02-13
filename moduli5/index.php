@@ -33,7 +33,7 @@ echo $lion[2][0].  "origin:" .$lion[2][1] . ", Life Span:" .$lion[2][2]. "<br>";
 
  for($i=0;$i<3;$i++){
     for($j=0;$j<3;$j++){
-        echo "Array: $i Element: $j <br>";
+        echo "Array: $i Element: $j <br>";                                                         
     }
  }
 
