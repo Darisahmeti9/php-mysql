@@ -1,4 +1,6 @@
 <?php
+session_start();
+
    $server = 'localhost';
    $username = 'root';
    $dbname = 'db';
@@ -10,5 +12,4 @@ try {
 }  catch(Exception $e){
     echo "Smothing went wrong";
 }
-
 ?>
