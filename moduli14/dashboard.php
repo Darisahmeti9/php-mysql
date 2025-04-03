@@ -1,8 +1,15 @@
+<?php
+   include_once("config.php");
+   if(empty($_SESSION['username'])){
+    header("location:login.php");
+   }
+   $sql = "SELECT * FROM users";
+   $selectUsers = $conn->prepare($sql);
+   $selectUsers->execute();
 
-Anik Kycyku <aaanikuu@gmail.com>
-7:44 AM (0 minutes ago)
-to me
+   $users_data = $selectUsers->fetchAll();
 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +17,7 @@ to me
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+
         table,td,th  {
             border: 1px solid black;
             border-collapse: collapse;
@@ -20,6 +28,23 @@ to me
     </style>
 </head>
 <body>
+          <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+            <a href="#" class="navbar-brand col-sm-3 col-md-2 mr-0">Welcome, <i><?php echo $_SESSION['username']?></i></a>
+            <ul class="navbar-nav px-3">
+                <li class="nav-item text-nowrap">
+                    <a href="logout.php" class="nav-link">Sign out</a>
+                </li>
+            </ul>
+          </nav>
+          <div class="container-fluid">
+            <div class="row">
+                <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                    <ul class="sidebar-sticky">
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+          </div>
+                   
     <?php
     include_once('config.php');
     $sql = 'SELECT * FROM users';
